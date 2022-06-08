@@ -86,6 +86,8 @@ body {
 }
 
 .title {
+    display: flex;
+    flex-direction: column;
     width: max-content;
     color: rgb(3, 159, 244);
     font-size: 7vw;
@@ -133,7 +135,8 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 6rem;
-    width: 100%;
+    /* width: 100%; */
+    width: 100vw;
 }
 
 .nav__container {
@@ -196,8 +199,8 @@ body {
 }
 
 .profile-image {
-    width: 75%;
-    height: 90%;
+    width: 100%;
+    height: 70%;
     border-radius: 50%;
     box-shadow: 18px 15px 51px 12px rgba(30, 31, 40, 0.947);
     border: medium solid radial-gradient(at 100% 100%, rgb(3, 159, 244) 0px, rgb(34, 40, 107) 50%);
@@ -207,7 +210,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    /* border: thin solid red; */
+    height: 45%;
 }
 
 .border-gradient {
@@ -225,6 +229,16 @@ p {
     width: 80%;
     font-family: 'Montserrat', sans-serif;
     color: rgb(217, 226, 235);
+}
+
+@media only screen and (min-width:200px) and (max-width:350px) {
+    .title {
+        font-size: 8vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        letter-spacing: -1.5px;
+        line-height: 40px;
+    }
 }
 
 @keyframes fadein {
@@ -317,18 +331,16 @@ p {
         height: 100vh;
     }
     .profile-image {
-        /* height: 300px; */
-        /* width: 15rem; */
         width: 100%;
         height: 70%;
         border-radius: 50%;
         box-shadow: 18px 15px 51px 12px rgba(30, 31, 40, 0.947);
         border: medium solid radial-gradient(at 100% 100%, rgb(3, 159, 244) 0px, rgb(34, 40, 107) 50%);
+        align-self: flex-start;
     }
     .aside-profile {
         display: flex;
         justify-content: center;
-        height: 450px;
     }
     .border-gradient {
         border: 10px solid;
