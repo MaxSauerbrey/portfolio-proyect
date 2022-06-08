@@ -127,7 +127,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .nav {
@@ -135,8 +135,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 6rem;
-    /* width: 100%; */
-    width: 100vw;
+    width: 100%;
 }
 
 .nav__container {
@@ -199,8 +198,8 @@ body {
 }
 
 .profile-image {
-    width: 100%;
-    height: 70%;
+    /* width: 100%;
+    height: 70%; */
     border-radius: 50%;
     box-shadow: 18px 15px 51px 12px rgba(30, 31, 40, 0.947);
     border: medium solid radial-gradient(at 100% 100%, rgb(3, 159, 244) 0px, rgb(34, 40, 107) 50%);
@@ -211,7 +210,8 @@ body {
     justify-content: center;
     align-items: center;
     /* border: thin solid red; */
-    height: 45%;
+    height: 60%;
+    width: 40%;
 }
 
 .border-gradient {
@@ -229,16 +229,6 @@ p {
     width: 80%;
     font-family: 'Montserrat', sans-serif;
     color: rgb(217, 226, 235);
-}
-
-@media only screen and (min-width:200px) and (max-width:350px) {
-    .title {
-        font-size: 8vw;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 900;
-        letter-spacing: -1.5px;
-        line-height: 40px;
-    }
 }
 
 @keyframes fadein {
@@ -341,6 +331,8 @@ p {
     .aside-profile {
         display: flex;
         justify-content: center;
+        height: 65%;
+        width: 25%;
     }
     .border-gradient {
         border: 10px solid;
