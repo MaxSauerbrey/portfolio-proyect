@@ -123,9 +123,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 90vh;
-        /* scroll-margin-top: 8rem; */
-        /* border: thin solid red; */
+        /* height: 90vh; */
     }
     
     .heading {
@@ -148,6 +146,7 @@
         font-weight: 900;
         letter-spacing: -1.5px;
         line-height: 40px;
+        padding: 1em;
         /* border: thin solid red; */
     }
     
@@ -178,6 +177,7 @@
         font-size: 3.5vw;
         line-height: 25px;
         width: 100%;
+        padding: 1em 0;
     }
     
     .curriculum {
@@ -204,6 +204,7 @@
     }
     
     .container-curriculum {
+        padding: 1em 1em 2em;
         width: max-content;
         height: 15%;
         display: flex;
@@ -228,7 +229,7 @@
         flex-direction: column;
         justify-content: space-around;
         /* align-items: flex-end; */
-        gap: 1em;
+        gap: 3em;
         align-items: center;
         height: 50%;
         width: 40%;
@@ -506,6 +507,19 @@
         /* overflow: scroll; */
         resize: vertical;
     }
+    
+    .form__submit-input {
+        background-color: rgb(3, 159, 244);
+        border: 2px solid rgb(3, 159, 244);
+        color: rgb(217, 226, 235);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 0.8em;
+        padding: 1em;
+        border-radius: 4px;
+        display: inline-block;
+        box-shadow: 2px 5px 0px 2px rgba(3, 159, 244, 0.575);
+    }
     /*! Footer section - */
     
     footer {
@@ -771,7 +785,7 @@
             margin-top: 0.3em;
         }
         .curriculum {
-            padding: 1em;
+            padding: 1.1em 1.5em;
             border-radius: 4px;
             display: inline-block;
             font-size: 1em;
@@ -858,7 +872,7 @@
         }
         .section2__button a {
             align-self: flex-start;
-            padding: 1em;
+            padding: 1.1em 1.5em;
             border-radius: 4px;
             display: inline-block;
             font-size: 1em;
@@ -1002,6 +1016,8 @@
             justify-content: space-evenly;
             align-items: center;
             padding: 80px 16px;
+            padding: 4em 1em;
+            scroll-margin-top: 6rem;
         }
         .contact-me-title {
             width: 50%;
@@ -1019,8 +1035,25 @@
             margin: 2.5em 0;
             width: 40%;
         }
+        .form__submit-input {
+            font-size: 1em;
+            transform: translateY(-0.3em);
+            display: inline-block;
+            box-shadow: 2px 5px 0px 2px rgba(3, 159, 244, 0.575);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        .form__submit-input:hover {
+            background-color: rgba(30, 31, 40, 0.947);
+            color: rgb(217, 226, 235);
+            border: 2px solid rgb(3, 159, 244);
+            transform: translateY(0.3em);
+            transition: all 0.5s ease-in-out;
+        }
         /*! Footer section - */
         footer {
+            /* height: 17vh; */
+            height: 8em;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
